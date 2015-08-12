@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/jclusso/easy_log.svg)](https://travis-ci.org/jclusso/easy_log)
 [![Code Climate](https://codeclimate.com/github/jclusso/easy_log/badges/gpa.svg)](https://codeclimate.com/github/jclusso/easy_log)
+
 # EasyLog
 
 ![Image of a log](http://i.imgur.com/AqsbKBs.png "Image of a log")
@@ -30,6 +31,15 @@ class Customer
   def create
     ...
   end
+end
+```
+
+For usage in [sidekiq](https://github.com/mperham/sidekiq), set the logger to
+sidekiq's logger in the `configure_server` block:
+
+```ruby
+Sidekiq.configure_server do |config|
+  EasyLog.set_logger config.logger
 end
 ```
 
@@ -77,6 +87,10 @@ class Customer
   end
 end
 ```
+
+The `EasyLog.set_logger` function can be used to set any class as the logger,
+as long as it responds to `#info`. In Rails apps, it will use the Rails logger
+as default.
 
 ## Contributing
 
