@@ -2,6 +2,8 @@
 [![Code Climate](https://codeclimate.com/github/jclusso/easy_log/badges/gpa.svg)](https://codeclimate.com/github/jclusso/easy_log)
 # EasyLog
 
+![Image of a log](http://i.imgur.com/AqsbKBs.png "Image of a log")
+
 EasyLog was created to make it easy and quick to output detailed log messages.
 
 ## Installation
