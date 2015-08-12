@@ -83,4 +83,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/jcluss
 
 ## License
 
-The gem is available as open source under the terms of the [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The gem is available as open source under the terms of the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
