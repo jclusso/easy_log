@@ -51,38 +51,38 @@ class Customer
 
   def create(name, gender)
     # useful at the beginning of a method
-    log(:start)
+    log :start
     # Customer#create: STARTED! w/ name: Jarrett gender: male
 
     # a general log message
-    log('Customer Signup from Google Campaign.')
+    log 'Customer Signup from Google Campaign.'
     # Customer#create: Customer Signup Complete! w/
     # name: Jarrett gender: male
 
 
     # a simple success message
-    log(:success) 'Customer Signup Complete!'
+    log :success 'Customer Signup Complete!'
     # Customer#create: SUCCESS: Customer Signup Complete! w/
     # name: Jarrett gender: male
 
     # or an error message
-    log(:error) 'External API Failed To Connect!'
+    log :error, 'External API Failed To Connect!'
     # Customer#create: ERROR: External API Failed To Connect w/
     # name: Jarrett gender: male
 
     # pass additional parameters in
-    log(:error) 'External API Failed To Connect!', plan_id: '4'
+    log :error, 'External API Failed To Connect!', plan_id: '4'
     # Customer#create: ERROR: Exteranl API Failed To Connect w/
     # name: Jarrett gender: male plan_id: 4
 
     # will even include instance variables if found
     @customer_id = '1'
-    log(:success) 'Customer Signup Complete!'
+    log :success, 'Customer Signup Complete!'
     # Customer#create: SUCCESS: Customer Signup Complete! w/
     # @customer_id: 1 name: Jarrett gender: male
 
     # useful at the end of a method
-    log(:finish)
+    log :finish
     # Customer#create: FINISHED! w/ name: Jarrett gender: male
   end
 end
@@ -99,4 +99,18 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/jcluss
 
 ## License
 
-The gem is available as open source under the terms of the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+    EasyLog - quickly and easily output detailed log messages
+    Copyright (C) 2015  Jarrett Lusso
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.

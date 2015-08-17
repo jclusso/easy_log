@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.summary       = 'EasyLog makes it easy to output descriptive logs'
   s.homepage      = 'http://github.com/jclusso/easy_log'
-  s.license       = 'CC BY-NC-SA 4.0. 2015'
+  s.license       = 'GNU GPL v3.0'
 
   s.files         = Dir['LICENSE.txt', 'README.md', 'lib/**/*']
   s.require_paths = ["lib"]
